@@ -1,5 +1,5 @@
 const express = require('express');
-const router = express.Router;
+const router = express.Router();
 
 // Get All Authors Route
 router.get('/', (req, res) => res.render('authors/index'));
