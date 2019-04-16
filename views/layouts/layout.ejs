@@ -13,8 +13,10 @@
     />
   </head>
   <body>
-    <%- include('../partials/header.ejs') %> <%- body %>
-    <br />
-    after
+    <%- include('../partials/header.ejs') %> 
+    <%- include('../partials/errorMessage.ejs') %>
+    <div class="container">
+      <%- body %>
+    </div>
   </body>
 </html>

@@ -1,1 +1,12 @@
-New Author
+<div class="row">
+  <div class="col-6 offset-3 text-center">
+    <h2 class="my-3 display-4">New Author</h2>
+
+    <form action="/authors" method="POST">
+      <label class="sr-only" for="inlineFormInputGroupUsername2">Name</label>
+      <%- include('_form_fields') %>
+      <a class="btn btn-danger" href="/authors">Cancel</a>
+      <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+  </div>
+</div>
