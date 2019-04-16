@@ -1,1 +1,26 @@
-All Authors
+<div class="row">
+    <div class="col-6 offset-3">
+      <h2 class="my-3 display-4 text-center">Search Authors</h2>
+  
+      <form action="/authors" method="GET">
+        <label class="sr-only" for="inlineFormInputGroupUsername2">Name</label>
+        <div class="input-group mb-2 mr-sm-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">Name</div>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              placeholder="Author's name"
+              value="<%= searchOptions.name %>"
+            />
+          </div>
+        <button type="submit" class="btn btn-outline-primary btn-block">Search</button>
+      </form>
+      <br>
+      <% authors.forEach(author => { %>
+        <div><%= author.name %></div>
+      <% }) %>
+    </div>
+  </div>
